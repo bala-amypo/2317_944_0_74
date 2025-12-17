@@ -1,24 +1,24 @@
 import java.time.LocalDate;
 
 public class StudentEntity {
-    private int id;
+    private Long id;
     private String name;
     private float cgpa;
     private LocalDate date;
 
     public StudentEntity() {}
-    public StudentEntity(int id, String name, float cgpa, LocalDate date) {
+    public StudentEntity(Long id, String name, float cgpa, LocalDate date) {
         this.id = id;
         this.name = name;
         this.cgpa = cgpa;
         this.date = date;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Long getId() {
         return this.id;
     }
 

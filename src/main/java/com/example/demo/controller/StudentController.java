@@ -32,18 +32,18 @@ public class StudentController {
     }
     
     @GetMapping("/getStudentId/{id}")
-    public StudentEntity getStudentId(@PathVariable int id) {
+    public StudentEntity getStudentId(@PathVariable Long id) {
         return studentService.getStudentRecord(id);
     }
 
     @PutMapping("/updateStudentRecord/{id}")
-    public String updateStudentData(@PathVariable int id, @RequestBody StudentEntity entity) {
+    public String updateStudentData(@PathVariable Long id, @RequestBody StudentEntity entity) {
         Optional<StudentEntity>
         return ;
     }
 
     @DeleteMapping("/deleteStudentRecord/{id}")
-    public String deleteStudentData(@PathVariable int id) {
+    public String deleteStudentData(@PathVariable Long id) {
         return studentService.deleteStudentRecord(id);
     }
 
