@@ -1,4 +1,4 @@
-package com.example.springFirst.controller;
+package com.example.demo.controller;
 
 import java.util.List;
 
@@ -10,12 +10,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import sbs.rosedev.springFirst.entity.StudentEntity;
-import sbs.rosedev.springFirst.services.StudentService;
-
-
-
-
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.services.StudentService;
 
 @RestController
 public class StudentController {
@@ -41,8 +37,9 @@ public class StudentController {
     }
 
     @PutMapping("/updateStudentRecord/{id}")
-    public StudentEntity updateStudentData(@PathVariable int id, @RequestBody StudentEntity entity) {
-        return studentService.updateStudentRecord(id, entity);
+    public String updateStudentData(@PathVariable int id, @RequestBody StudentEntity entity) {
+        Optional<StudentEntity>
+        return ;
     }
 
     @DeleteMapping("/deleteStudentRecord/{id}")
