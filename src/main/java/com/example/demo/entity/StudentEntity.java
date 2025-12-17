@@ -3,8 +3,8 @@ import java.time.LocalDate;
 public class StudentEntity {
     private int id;
     private String name;
-    final float cgpa
-    final LocalDate date;
+    private float cgpa
+    private LocalDate date;
 
     public StudentEntity() {}
     public StudentEntity(int id, String name, float cgpa, LocalDate date) {
@@ -14,5 +14,33 @@ public class StudentEntity {
         this.date = date;
     }
 
-    public
+    public void setId(int id) {
+        thsi.id = id;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+    public void setName(String name) {
+        thsi.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+    public void setCgpa(float cgpa) {
+        thsi.cgpa = cgpa;
+    }
+
+    public float getCgpa() {
+        return this.cgpa;
+    }
+
+    public void setDate(LocalDate date) {
+        thsi.date = date;
+    }
+
+    public LocalDate getDate() {
+        return this.date;
+    }
 }
